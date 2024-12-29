@@ -9,4 +9,5 @@
 
 import router from '@adonisjs/core/services/router'
 
-router.on('/').render('pages/home')
+router.get('tracks', '#controllers/tracks_controller.tracks')
+router.get('artists', '#controllers/artists_controller.artists')
